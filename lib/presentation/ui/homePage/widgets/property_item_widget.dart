@@ -21,7 +21,7 @@ class PropertyItemWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: BorderRadiusGeometry.circular(15),
+              borderRadius: BorderRadius.circular(15),
               child: Image.network(
                 property.propertyImage ?? '',
                 width: double.infinity,

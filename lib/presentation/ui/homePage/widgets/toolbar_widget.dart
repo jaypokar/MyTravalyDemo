@@ -36,7 +36,7 @@ class _ToolbarWidgetState extends BaseStatefulWidgetState<ToolbarWidget> {
             tabsRouter.setActiveIndex(3);
           },
           child: ClipRRect(
-            borderRadius: BorderRadiusGeometry.circular(10),
+            borderRadius: BorderRadius.circular(10),
             child: Image.asset(
               ImageResources.appIcon,
               height: 40,

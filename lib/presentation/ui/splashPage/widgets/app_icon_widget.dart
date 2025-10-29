@@ -36,7 +36,7 @@ class _AppIconWidgetState extends State<AppIconWidget> with TickerProviderStateM
     return ScaleTransition(
       scale: _cashbackAnimation,
       child: ClipRRect(
-        borderRadius: BorderRadiusGeometry.circular(10),
+        borderRadius: BorderRadius.circular(10),
         child: Image.asset(
           ImageResources.appIcon,
           height: MediaQuery.of(context).size.height * 0.3,
