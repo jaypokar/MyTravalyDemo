@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "mytravalypractical",
+    "staging": "mytravalypractical"
+  },
+  "targets": {},
+  "etags": {}
+}

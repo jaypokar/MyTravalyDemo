@@ -1,0 +1,108 @@
+name: mytravaly
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  # Dio is http client library for API's
+  dio: ^5.7.0
+  # Flutter blocs is state management library
+  flutter_bloc: ^9.1.0
+  # Functional programming thingies
+  dartz: ^0.10.1
+  # Manage sessions library
+  shared_preferences: ^2.3.2
+  # Encode and decode json files
+  json_annotation: ^4.9.0
+  # Serialize and Deserialize json files
+  json_serializable: any
+  # Service locator (Dependency Injection)
+  get_it: ^8.0.0
+  # To log all the Log level (debug,verbose,info,error,wtf[what the terrible failure log])
+  logger: ^2.4.0
+  # To check Value Equality between objects same Type or data we use Equatable
+  equatable: ^2.0.5
+  # AutoRoute used for navigation in the app.
+  auto_route: 9.3.0+1
+  # An extremely easy-to-use method call debouncer and throttler package
+  easy_debounce: ^2.0.3
+  # A Pure Dart Utility library that checks for an Active Internet connection
+  internet_connection_checker_plus: ^2.7.2
+  # A package provides an easy way to add shimmer effect in Flutter project
+  shimmer: ^3.0.0
+  # Lottie is a mobile library for Android and iOS that parses json into animations
+  lottie: ^3.2.0
+  #Firebase Dependencies
+  # For firebase core packages
+  firebase_core: ^4.2.0
+  # For easy firebase authentication
+  firebase_auth: ^6.1.1
+  # Google Sign In
+  google_sign_in: ^6.1.4
+
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  auto_route_generator: ^9.0.0
+  envied_generator: ^1.0.0
+  hive_generator: ^2.0.1
+  build_runner:
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/gifs/
+    - assets/animation/
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: fonts/Nunito_Regular.ttf
+        - asset: fonts/Nunito_Thin.ttf
+          weight: 400
+        - asset: fonts/Nunito_SemiBold.ttf
+          weight: 600
+        - asset: fonts/Nunito_Bold.ttf
+          weight: 700
+        - asset: fonts/Nunito_ExtraBold.ttf
+          weight: 800
